@@ -1,12 +1,8 @@
 html {
-	height: 100%;
-	width: 100%;
 	font-family: 'Allura', cursive;
 }
 
 body {
-	min-height: 100%;
-	min-width: 100%;
 	overflow: hidden;
 	margin: 0px;
 }
@@ -18,38 +14,45 @@ body.under-construction {
 	background-repeat: no-repeat;
 }
 
-div.center {
+div {
+	overflow: hidden;
+}
+
+div.main-container {}
+
+div.tile {
 	min-height: 100% !important;
 	min-width: 100% !important;
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-div.img {
-	min-height: 100%;
-	min-width: 100%;
+div.background-img {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
 
 div.travel-log-gateway {
 	background-image: url('../images/travel/muddumalai-road.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 	position: absolute;
 	background-position: center;
 }
 
-div.black-fade-overlay {
+div.fade-overlay {
 	min-height: 100% !important;
 	min-width: 100% !important;
-	position: absolute;
-	background-position: center;
-	background-color: rgba(0, 0, 0, 0.3);
 }
 
-div.head-container {
-	position: absolute;
-	top: 50%;
-	left: 52%;
-	transform: translate(-50%, -50%);
+div.black {
+	background-color: rgba(0, 0, 0, 0.2);
 }
+
+div.head-container {}
 
 h1 {
 	font-size: 4em;
