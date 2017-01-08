@@ -1,6 +1,61 @@
+html {
+	font-family: 'Allura', cursive;
+}
+
+body {
+	overflow: hidden;
+	margin: 0px;
+}
+
 body.under-construction {
 	background-color: #eee;
 	background-image: url('../images/under-construction.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+div {
+	overflow: hidden;
+}
+
+div.main-container {}
+
+div.tile {
+	min-height: 100% !important;
+	min-width: 100% !important;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.background-img {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+div.travel-log-gateway {
+	background-image: url('../images/travel/muddumalai-road.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-position: center;
+}
+
+div.fade-overlay {
+	min-height: 100% !important;
+	min-width: 100% !important;
+}
+
+div.black {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.head-container {}
+
+h1 {
+	font-size: 4em;
+	font-weight: lighter;
+	color: #fff;
 }
