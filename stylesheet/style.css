@@ -5,6 +5,7 @@ html {
 body {
 	overflow: hidden;
 	margin: 0px;
+	background-image: url('../images/photography.png');
 }
 
 body.under-construction {
