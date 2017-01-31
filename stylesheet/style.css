@@ -5,6 +5,7 @@ html {
 body {
 	overflow: hidden;
 	margin: 0px;
+	background-image: url('../images/photography.png');
 }
 
 body.under-construction {
@@ -75,6 +76,10 @@ div.main-container {}
 		margin-right: 10px;
 		margin-top: 10px;
 	}
+}
+
+div.card-container {
+	display: inline-block;
 }
 
 div.card-container:hover, div.card-container:focus {
