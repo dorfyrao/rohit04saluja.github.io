@@ -78,6 +78,10 @@ div.main-container {}
 	}
 }
 
+div.card-container {
+	display: inline-block;
+}
+
 div.card-container:hover, div.card-container:focus {
 	box-shadow: 0px 5px 20px #333;
 	cursor: pointer;
