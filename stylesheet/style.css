@@ -15,6 +15,16 @@ body.under-construction {
 	background-repeat: no-repeat;
 }
 
+div._404 {
+	font-family: 'Droid Sans Mono', monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
 div {
 	overflow: hidden;
 }
@@ -35,6 +45,41 @@ header {
 		height: 45px;
 		margin-bottom: 5px;
 		padding: 5px;
+	}
+}
+
+header > div.title {
+	display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+	header > div.title {
+		font-size: 20px;
+		margin-left: 70px;
+		height: 100%;
+	}
+}
+
+div.title div.img {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+	div.title div.img {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+header div.title-img {
+	background-image: url('../images/RSWeb.png');
+}
+
+@media only screen and (min-width: 768px) {
+	header div.title-img {
+		height: calc(45px - 10px);
+		width: calc((45px - 10px) * 3.4);
 	}
 }
 
